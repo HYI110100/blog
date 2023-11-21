@@ -4,20 +4,7 @@ module.exports = {
   "description": "This is a personal blog developed based on VuePress",
   "dest": "public",
   "head": [
-    [
-      "link",
-      {
-        "rel": "icon",
-        "href": "/favicon.ico"
-      }
-    ],
-    [
-      "meta",
-      {
-        "name": "viewport",
-        "content": "width=device-width,initial-scale=1,user-scalable=no"
-      }
-    ]
+    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
   ],
   "theme": "reco",
   "themeConfig": {
@@ -85,7 +72,8 @@ module.exports = {
     "recordLink":'', //ICP 备案指向链接
     "cyberSecurityRecord":'', //公安部备案文案
     "cyberSecurityLink":'', //公安部备案指向链接
-    "startYear": "2023"
+    "startYear": "2023",
+    'subSidebar': 'auto'
   },
   "markdown": {
     "lineNumbers": true

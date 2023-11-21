@@ -7,7 +7,7 @@ tags:
  - Object
 categories:
  - JavaScript
-sidebar: auto
+
 ---
 # 先认识一下
 ## Map
