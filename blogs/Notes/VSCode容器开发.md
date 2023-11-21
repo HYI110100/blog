@@ -91,7 +91,7 @@ source ~/.bashrc
 ### 全局依赖
 nvm的node是隔离的，不同版本间全局依赖可能会重复下载，要解决这个问题，可以让 nvm 下node 所以版本使用一个全局依赖和全局缓存空间。
 
-先进行一次性操作
+**一次性操作**
 1. 在一个目录下新建两个文件夹 node_global、node_cache。
 > 本次演示目录是在 /root/node
 2. 配置环境变量
@@ -100,7 +100,9 @@ export NODE_ENV="$HOME/node"
 export PATH="$NODE_ENV/node_global/bin:$PATH"
 export NODE_PATH="$NODE_ENV/node_global/lib/node_modules"
 ```
-上面的配置完成后，只要在想要全局的版本执行,就可以使用全局变量了
+**重复性操作**
+
+在想要使用全局的版本执行
 ```bash
 npm config set prefix "/root/node/node_global"
 npm config set cache "/root/node/node_cache"
