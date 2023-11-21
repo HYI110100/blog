@@ -8,7 +8,7 @@ categories:
  - Notes
 ---
 # 前言
-在本教程中，我将演示如何使用VSCode基于Docker进行前端开发。我们将使用Ubuntu镜像作为基础镜像，配置一个简单的前端开发环境。
+记录如何使用VSCode基于Docker进行前端开发。基于Ubuntu镜像作为基础镜像，配置一个简单的前端开发环境。
 # 操作
 ## 安装Docker
 首先，确保按照以下步骤安装Docker：
@@ -33,7 +33,7 @@ docker run -itd -p 5555:5555 -v D:/project:/data --name 容器名称 镜像ID /b
 - `镜像ID` 是要运行的镜像的ID或者镜像名。
 - `/bin/bash` 指定容器启动时执行的命令，这里是在容器内启动 Bash shell。
 ## 环境配置
-我们使用的是纯净的Ubuntu镜像（大小只有72MB），具有最基本的能力。为了满足后续可能的需求，首先更新系统：
+使用的是纯净的Ubuntu镜像（大小只有72MB），具有最基本的能力。为了满足后续可能的需求，首先更新系统：
 ```bash
 apt-get update
 apt-get upgrade -y
